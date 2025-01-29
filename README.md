@@ -1,0 +1,3 @@
+# Elixir List Modification During Enum.each
+
+This example demonstrates a common issue in Elixir when trying to modify a list while iterating. Elixir uses immutable data structures, meaning that you can't directly modify elements within a list.  Attempting to do so will not produce the intended result. The code attempts to remove the number 3 during iteration, but it will only modify a local copy, not the original list. This is a subtle error that beginners can easily run into.
